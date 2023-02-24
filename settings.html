@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Chip Technologies</title>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylingsheet.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    
+</head>
+<body>
+
+    <div class="container-fluid p-3" id="dashboardparentdiv">
+
+    
+        <div class="row">
+
+            
+            <!-- side panel div -->
+            <div class="col-md-2 vertical-menu h-100 mb-4" id="sidepaneldiv">
+                <div class="row d-flex ps-2 pe-2" id="logodiv" width="100%">
+                    <img src="images/greenlogo.png" alt="logo_dashboard" width="90%" height="150px">
+                </div>
+
+                <div class="row d-flex mt-4" width="100%" style="justify-content: center;">
+                    <div class="row sidepanelitems" id="dashboardsidepanelicon">
+                        <ul class="mt-2">
+                            <li><i class="fa-solid fa-square me-2"></i></li>
+                            <li><a href="index_dashboard.html" style="text-decoration: none; color: #3f9f98;"><b>Dashboard</b></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="row mt-3 sidepanelitems" id="convertfundssidepanelicon">
+                        <ul class="mt-2">
+                            <li><i class="fa-solid fa-money-bill-transfer me-2"></i></li>
+                            <li><b>Convert Funds</b></li>
+                        </ul>
+                    </div>
+
+                    <div class="row mt-3 sidepanelitems" id="walletsidepanelicon">
+                        <ul class="mt-2">
+                            <li><i class="fa-solid fa-wallet me-2"></i></li>
+                            <li><b>Wallets</b></li>
+                        </ul>
+                    </div>
+
+                    <div class="row mt-3 sidepanelitems" id="transactionsidepanelicon">
+                        <ul class="mt-2">
+                            <li><i class="fa-solid fa-money-bill-transfer me-2"></i></li>
+                            <li><b>Transactions</b></li>
+                        </ul>
+                    </div>
+
+                    <div class="row mt-3 sidepanelitems" id="card-receiptsidepanelicon">
+                        <ul class="mt-2">
+                            <li><i class="fa-solid fa-credit-card me-2"></i></li>
+                            <li><b>Card & Recepients</b></li>
+                        </ul>
+                    </div>
+
+                    <div class="row mt-3 sidepanelitems" id="settingsidepanelicon">
+                        <ul class="mt-2">
+                            <li><i class="fa-solid fa-gear me-2"></i></li>
+                            <li><b>Settings</b></li>
+                        </ul>
+                    </div>
+
+                    <div class="row mt-3 sidepanelitems" id="logoutsidepanelicon">
+                        <ul class="mt-2">
+                            <li><i class="fa-solid fa-right-from-bracket me-2"></i></li>
+                            <li><b>Log out</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- End side panel div -->
+    
+            <!-- Main Dashboard div -->
+            <div class="col-md-10" id="maindashboarddiv">
+    
+                <nav class=" navbar navbar-expand-lg navbar-light bg-light d-flex ms-2" id="navpaneldiv">
+                    
+                    
+                    <div class="collapse navbar-collapse ms-2" id="navbarSupportedContent">
+
+                            <div style="width:29%">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                    <a class="nav-link" href="#"> Pages <span>/</span> <span>Settings</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div style="width: 29%;">
+                                <form class="form-inline my-2 my-lg-0 d-flex" >
+                                    <div class="search d-flex">
+                                        <button id="search-button" type="button" class="btn">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                        <input id="search-input" type="search" id="form1" class="form-control" placeholder="type here" />
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="d-flex" style="width:40%; justify-content: space-evenly;">
+                                
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item active">
+                                        <a class="nav-link" href="#"> <i class="fas fa-comments"></i></a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#"> Need Help? </a>
+                                        </li>
+                                    </ul>
+                        
+
+                                 <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                    <a class="nav-link" href="#"><i class="fas fa-bell"></i> +1 </a>
+                                    </li>
+                                 </ul>
+
+
+                                    <ul class="navbar-nav mr-auto">
+                                       <li class="nav-item active">
+                                       <a class="nav-link" href="#">
+                                            <img src="images/maleavatar2.jpg"
+                                            class="me-3 rounded-circle avatar-xs" alt="user-pic" height="30px">
+                                        </a>
+                                       </li>
+                                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Tessy Omah
+                                      </a>
+                                      <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      </ul>
+                                    </ul>
+                                
+                                   
+                        </div>
+
+
+                        </div>
+                    </nav>
+                    <!-- End of navigation section -->
+
+                    <div class="mb-3 ms-3 mt-1">
+                        <h4>
+                            Account Settings
+                        </h4>
+                    </div>
+
+                    <!-- Dashboard Main Content -->
+                    <div class="row ms-3 d-flex pb-4" style="justify-content: space-between;">
+                        
+                        <!-- Settings 2nd side panel -->
+                    
+                        <div class="col-md-3" id="settingsidepaneldiv" style="max-height: 400px;">
+
+                            <div class="row d-flex mt-5" width="100%" style="justify-content: end;">
+                                <div class="row settingsidepanelitems" id="settingsprofilesidepanelicon">
+                                    <ul class="mt-2">
+                                        <li><i class="fa-solid fa-user me-2"></i></li>
+                                        <li><b>Profile info</b></li>
+                                    </ul>
+                                </div>
+            
+                                <div class="row mt-3 settingsidepanelitems" id="settingspasswordidepanelicon">
+                                    <ul class="mt-2">
+                                        <li><i class="fa-solid fa-lock me-2"></i></li>
+                                        <li><b>Passwords</b></li>
+                                    </ul>
+                                </div>
+            
+                                <div class="row mt-3 settingsidepanelitems" id="settingspasswordsidepanelicon">
+                                    <ul class="mt-2">
+                                        <li><i class="fa-solid fa-bell me-2"></i></li>
+                                        <li><b>Notifications</b></li>
+                                    </ul>
+                                </div>
+            
+                                <div class="row mt-3 mb-5 settingsidepanelitems" id="settingsverificationsidepanelicon">
+                                    <ul class="mt-2">
+                                        <li><i class="fa-solid fa-shield me-2"></i></li>
+                                        <li><b>Verification</b></li>
+                                    </ul>
+                                </div>
+            
+                                
+                            </div>
+
+                        </div>
+                    
+
+                        <!-- Second part of dashboard menu -->
+                    
+                        <div class="col-md-8">
+
+                            <!-- User Profile Div -->
+                            <div class="container-fluid me-4" style="justify-content: space-between; border-radius: 15px; background-color: #fff;">
+
+                                <div class="d-flex pt-5">
+                                    <div width="20%" >
+                                        <ul class="mt-2" style="list-style: none; display: flex; color: #3f9f98;">
+                                            <li><i class="fa-solid fa-less-than me-2"></i></li>
+                                            <li>Go Back</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="ms-4" width="70%">
+                                        <h3>Edit Profile</h3>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mt-4 mb-4" width="100%" style=" align-items: center; justify-content: space-evenly;">
+
+                                    <!-- Profile Image -->
+                                    <div>
+                                        <img src="images/maleavatar2.jpg" alt="user image" width="100px" style="border-radius: 50%;">
+                                    </div>
+
+                                    
+
+                                        <div class="row">
+                                            <ul class="mt-2 d-flex" style="list-style: none; display: flex; color: #3f9f98; justify-self: center;">
+                                                <li><i class="fa-solid fa-camera me-2"></i></li>
+                                                <li>Change Photo</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <h5>Remove</h5>
+                                        </div>
+                                    
+                                    
+                                </div>
+
+                                <div class="row m-3 pb-4">
+                                    <div class="col-md-10 offset-1">
+
+                                    <form action="" method="" id="settingsform">
+                        
+
+                                        <div class="mb-3">
+                                            <label for="fullname">Full Name</label>
+                                            <input type="text" class="form-control" name="fullname" id="settingfullname">
+                                        </div>
+                
+                                        <div class="mb-4">
+                                            <label for="email">Email Address</label>
+                                            <input type="text" class="form-control" name="email" id="settingsemail">
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <label for="password">Mobile Number</label>
+                                            <input type="text" class="form-control" name="phone" id="settingsphone">
+                                        </div>
+                
+                                        <div class="mb-3">
+                                            <input type="button" class="btn" name="btnsignin" id="btnignin" value="save Changes">
+                                        </div>
+                                    </form>
+                                </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    
+                    </div>
+    
+    
+            </div>
+        </div>
+    </div>
+    
+
+    <script type="text/javascript" src="jquery/jquery.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Chip Technologies</title>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylingsheet.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    
+</head>
+<body>
+
+    <div class="container-fluid p-3" id="dashboardparentdiv">
+
+    
+        <div class="row">
+            <!-- side panel div -->
+            <div class="col-md-2 vertical-menu h-100 mb-4" id="sidepaneldiv">
+                <div class="row d-flex ps-2 pe-2" id="logodiv" width="100%">
+                    <img src="images/greenlogo.png" alt="logo_dashboard" width="90%" height="150px">
+                </div>
+
+                <div class="row d-flex mt-4" width="100%" style="justify-content: center;">
+                    <div class="row sidepanelitems" id="dashboardsidepanelicon">
+                        <ul class="mt-2">
+                            <li><i class="fa-solid fa-square me-2"></i></li>
+                            <li><b>Dashboard</b></li>
+                        </ul>
+                    </div>
+
+                    <div class="row mt-3 sidepanelitems" id="convertfundssidepanelicon">
+                        <ul class="mt-2">
+                            <li><i class="fa-solid fa-money-bill-transfer me-2"></i></li>
+                            <li><b>Convert Funds</b></li>
+                        </ul>
+                    </div>
+
+                    <div class="row mt-3 sidepanelitems" id="walletsidepanelicon">
+                        <ul class="mt-2">
+                            <li><i class="fa-solid fa-wallet me-2"></i></li>
+                            <li><b>Wallets</b></li>
+                        </ul>
+                    </div>
+
+                    <div class="row mt-3 sidepanelitems" id="transactionsidepanelicon">
+                        <ul class="mt-2">
+                            <li><i class="fa-solid fa-money-bill-transfer me-2"></i></li>
+                            <li><b>Transactions</b></li>
+                        </ul>
+                    </div>
+
+                    <div class="row mt-3 sidepanelitems" id="card-receiptsidepanelicon">
+                        <ul class="mt-2">
+                            <li><i class="fa-solid fa-credit-card me-2"></i></li>
+                            <li><b>Card & Recepients</b></li>
+                        </ul>
+                    </div>
+
+                    <div class="row mt-3 sidepanelitems" id="settingsidepanelicon">
+                        <ul class="mt-2">
+                            <li><i class="fa-solid fa-gear me-2"></i></li>
+                            <li><a href="settings.html" style="text-decoration: none; color: #3f9f98;"><b>Settings</b></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="row mt-3 sidepanelitems" id="logoutsidepanelicon">
+                        <ul class="mt-2">
+                            <li><i class="fa-solid fa-right-from-bracket me-2"></i></li>
+                            <li><b>Log out</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End side panel div -->
+    
+            <!-- Main Dashboard div -->
+            <div class="col-md-10" id="maindashboarddiv">
+    
+                <nav class=" navbar navbar-expand-lg navbar-light bg-light d-flex ms-2" id="navpaneldiv">
+                    
+                    
+                    <div class="collapse navbar-collapse ms-2" id="navbarSupportedContent">
+
+                            <div style="width:29%">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                    <a class="nav-link" href="#"> Pages  /  <span>Dashboard</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div style="width: 29%;">
+                                <form class="form-inline my-2 my-lg-0 d-flex" >
+                                    <div class="search d-flex">
+                                        <button id="search-button" type="button" class="btn">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                        <input id="search-input" type="search" id="form1" class="form-control" placeholder="type here" />
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="d-flex" style="width:40%; justify-content: space-evenly;">
+                                
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item active">
+                                        <a class="nav-link" href="#"> <i class="fas fa-comments"></i></a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#"> Need Help? </a>
+                                        </li>
+                                    </ul>
+                        
+
+                                 <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                    <a class="nav-link" href="#"><i class="fas fa-bell"></i> +1 </a>
+                                    </li>
+                                 </ul>
+
+
+                                    <ul class="navbar-nav mr-auto">
+                                       <li class="nav-item active">
+                                       <a class="nav-link" href="#">
+                                            <img src="images/maleavatar2.jpg"
+                                            class="me-3 rounded-circle avatar-xs" alt="user-pic" height="30px">
+                                        </a>
+                                       </li>
+                                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Tessy Omah
+                                      </a>
+                                      <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      </ul>
+                                    </ul>
+                                
+                                   
+                        </div>
+
+
+                        </div>
+                    </nav>
+                    <!-- End of navigation section -->
+
+                    <div class="m-3">
+                        <h4>
+                            Welcome back, Omah
+                        </h4>
+                    </div>
+
+                    <!-- Dashboard Main Content -->
+                    <div class="row ms-3 d-flex pb-4" style="justify-content: space-between;">
+                        <div class="col-md-7">
+                            <div class="row d-flex" style="justify-content: space-between;">
+                                <div class="walletbalance" id="walletbalance_a">
+                                    
+                                        <select class="form-select mt-3" name="currency" id="walletbalancecurrency_a" style="border: 0px;">
+                                            <option value="usd">usd wallet balance</option>
+                                        </select>
+                                        <div class="d-flex ms-2 mt-4">
+                                            <h3>$</h3>
+                                            <h3>31,320.80</h3>
+                                        </div>
+                                    
+                                </div>
+                                <div class="walletbalance" id="walletbalance_b">
+
+                                        <select class="form-select mt-3" name="currency" id="walletbalancecurrency_b" style="border: 0px;">
+                                            <option value="usd">xof wallet balance</option>
+                                        </select>
+                                        <div class="d-flex ms-2 mt-4">
+                                            <h3>$</h3>
+                                            <h3>150.30</h3>
+                                        </div>
+
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <h4>
+                                    Quick Actions
+                                </h4>
+                            </div>
+                            <div class="row d-flex mt-4" style="justify-content: space-between;">
+                                <div class="btnquickactions" id="btnquickactions_a">
+                                    <i class="fa-solid fa-paper-plane me-2" style="font-size: 30px;"></i><span> Send money</span>
+                                </div>
+                                <div class="btnquickactions" id="btnquickactions_b">
+                                    <i class="fa-solid fa-circle-plus me-2" style="font-size: 30px;"></i><span> Add money</span>
+                                </div>
+                            </div>
+                                <div class="mt-4">
+                                    <h4>
+                                        Convert Funds
+                                    </h4>
+                                </div>
+
+                            <div class="row d-flex mt-3" id="convertfundsdiv">
+                             
+                                <div class="convertcurrency" >
+                                  
+                                        <div style="display: flex; justify-content: space-between; height: 20px ;margin-top: -20px;">
+                                        
+                                            <b><p style="font-size: 11px;">You Send</p></b><span style="font-size: 10px;">United State Dollar</span> 
+                                        
+                                        </div>
+                                    <div class="d-flex mt-3" style="justify-content: space-between;">
+                                        <div width="45%" >
+                                            <h4>468</h4>
+                                        </div>
+                                        <div width="45%">
+                                            <select class="form-select" name="currency" id="currency">
+                                                <option value="usd">usd</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                  
+                                </div>
+
+                                <div id="convertcurrencyicon">
+                                    <i class="fa-solid fa-money-bill-transfer" style="font-size: 30px; color: #fff;"></i>
+                                </div>
+
+                                  <div class="convertcurrency">
+
+                                        <div style="display: flex; justify-content: space-between; height: 20px ;margin-top: -20px;">
+                                            
+                                            <b><p style="font-size: 11px;">Recepient receives</p></b><span style="font-size: 10px;">French Franc CFA</span>
+                                            
+                                        
+                                        </div>
+                                    <div class="d-flex mt-3" style="justify-content: space-between;">
+                                        <div width="45%" >
+                                            <h4>468</h4>
+                                        </div>
+                                        <div width="45%">
+                                            <select class="form-select" name="currency" id="currency">
+                                                <option value="usd">usd</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="row">
+                                    <ul style="list-style: none; display: flex;">
+                                        <li class="me-1"><span>1</span>USD</li>
+                                        <li class="me-1">=</li>
+                                        <li class="me-1" >23.45</li>
+                                        <li class="me-1">CFA</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <form>
+                                    <div class="d-flex" id="btncovertdiv" width="10%" style="justify-content: end;">
+                                        <button type="button" class="btn" name="btnconvert" style="background-color: #3f9f98; color: #fff;">Continue</button> 
+                                    </div>
+                                    </form>
+                                </div>
+                              
+                            </div>
+
+                            <div class="mt-4">
+                                <h4>
+                                    Saved recepients
+                                </h4>
+                            </div>
+                            <!-- Recepient div -->
+                            <div class="row p-2 d-flex" width="100%" style=" justify-content: space-between; align-items: center;">
+                                <div id="createrecepient">
+                                    <i class="fa-solid fa-circle-plus" style="font-size: 30px;"></i>
+                                    <p style="text-align: center;">New Recepient</p>
+                                </div>
+                                <div class="recepients">
+                                    <img src="images/femaleavatar2.jpg" class=" rounded-circle avatar-xs" alt="user-pic" height="40px">
+                                    <h6>Scarlett</h6>
+                                    <p>$Cro tag</p>
+                                </div>
+                                <div class="recepients">
+                                    <img src="images/femaleavatar1.jpg" class=" rounded-circle avatar-xs" alt="user-pic" height="40px">
+                                    <h6>Tarry O</h6>
+                                    <p>$Cro tag</p>
+                                </div>
+                                <div class="recepients">
+                                    <img src="images/maleavatar1.jpg" class=" rounded-circle avatar-xs" alt="user-pic" height="40px">
+                                    <h6>Tarry O</h6>
+                                    <p>$Cro tag</p>
+                                </div>
+                                <div class="recepients">
+                                    <img src="images/maleavatar2.jpg" class=" rounded-circle avatar-xs" alt="user-pic" height="40px">
+                                    <h6>Tarry O</h6>
+                                    <p>$Cro tag</p>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                        <!-- Second part of dashboard menu -->
+                    
+
+                        <div class="col-md-5">
+
+                            <!-- Atm div -->
+                            <div class="container-fluid me-4">
+                                <div class="mb-4" id="atmcard">
+
+                                    <div class="d-flex p-4" style="justify-content: space-between; width: 100%; color: #fafafa;">
+                                        <div>
+                                            <p>Virtual card</p>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-wifi" style="font-size: 20px;"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="" width="80%" id="atmnumbers">
+                                        <ul style="list-style: none; display: flex; ">
+                                            <li style="margin-left: 0px;">
+                                                4562
+                                            </li>
+                                            <li>
+                                                1122
+                                            </li>
+                                            <li>
+                                                4594
+                                            </li>
+                                            <li>
+                                                7852
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+
+                                    <div class="d-flex" style="justify-content: space-between;">
+                                        <div class="d-flex mt-4" width="40%" style="justify-content: space-between;" id="cardnameexpdiv">
+                                            <div id="cardholder">
+                                                <ul style="list-style: none;">
+                                                    <li style="font-size: 10px;">Card Holder</li>
+                                                    <li>Jack Peterson</li>
+                                                </ul>
+                                            </div>
+                                            <div id="cardexpiry">
+                                                <ul style="list-style: none;">
+                                                    <li style="font-size: 10px;">Expires</li>
+                                                    <li>11/<span>22</span></li>
+                                                </ul>
+                                            </div>
+                                       </div> 
+
+                                        <div class="d-flex mt-4 me-3" id="cardbrandlogo" width="60%">
+                                            <img src="images/mastercard.png" alt="masatercardlogo" width="60px">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Recent Transactions -->
+                                <div class="d-flex p-2" style="justify-content: space-between;">
+                                    <h5>Recent transactions</h5>
+                                    <p>View all</p>
+                                </div>
+
+                                <!-- Transactions Section -->
+
+                                <div class="" id="transactionslist">
+
+                                    <div class="d-flex" style=" justify-content: space-between; align-items: center;">
+
+                                        <div class="d-flex mt-3 ms-3" id="transactions-icondiv" >
+                                            <div class="transaction-icon d-flex">
+                                                <i class="fa-solid fa-arrows-rotate" style="font-size: 20px;"></i>
+                                            </div>
+                                            <div class="transactiondescription">
+
+                                                <ul style="list-style: none;">
+                                                    <li><b>Exchanged USD to CFA</b></li>
+                                                    <li style="font-size: 10px;">2:30 <span>pm</span> <span>today</span></li>
+                                                </ul>
+                                                 
+                                            </div>
+                                        </div>
+
+                                        <div class="tran-samount-status me-3">
+
+                                            <ul style="list-style: none;">
+                                                <li><span>$</span>1200</li>
+                                                <li style="font-size: 10px;">pending</li>
+                                            </ul>
+                            
+                                        </div>
+                                    </div>
+                                        <!-- 2 -->
+                                    <div class="d-flex" style=" justify-content: space-between; align-items: center;">
+
+                                        <div class="d-flex mt-3 ms-3" id="transactions-icondiv" >
+                                            <div class="transaction-icon d-flex">
+                                                <i class="fa-solid fa-arrows-rotate" style="font-size: 20px;"></i>
+                                            </div>
+                                            <div class="transactiondescription">
+
+                                                <ul style="list-style: none;">
+                                                    <li><b>Exchanged USD to CFA</b></li>
+                                                    <li style="font-size: 10px;">2:30 <span>pm</span> <span>today</span></li>
+                                                </ul>
+                                                 
+                                            </div>
+                                        </div>
+
+                                        <div class="tran-samount-status me-3">
+
+                                            <ul style="list-style: none;">
+                                                <li><span>$</span>1200</li>
+                                                <li style="font-size: 10px;">pending</li>
+                                            </ul>
+                            
+                                        </div>
+                                    </div>
+
+                                    <!-- 3 -->
+                                    <div class="d-flex" style=" justify-content: space-between; align-items: center;">
+
+                                        <div class="d-flex mt-3 ms-3" id="transactions-icondiv" >
+                                            <div class="transaction-icon d-flex">
+                                                <i class="fa-solid fa-arrows-rotate" style="font-size: 20px;"></i>
+                                            </div>
+                                            <div class="transactiondescription">
+
+                                                <ul style="list-style: none;">
+                                                    <li><b>Exchanged USD to CFA</b></li>
+                                                    <li style="font-size: 10px;">2:30 <span>pm</span> <span>today</span></li>
+                                                </ul>
+                                                 
+                                            </div>
+                                        </div>
+
+                                        <div class="tran-samount-status me-3">
+
+                                            <ul style="list-style: none;">
+                                                <li><span>$</span>1200</li>
+                                                <li style="font-size: 10px;">pending</li>
+                                            </ul>
+                            
+                                        </div>
+                                    </div>
+
+                                    <!-- 4 -->
+                                    <div class="d-flex" style=" justify-content: space-between; align-items: center;">
+
+                                        <div class="d-flex mt-3 ms-3" id="transactions-icondiv" >
+                                            <div class="transaction-icon d-flex">
+                                                <i class="fa-solid fa-arrows-rotate" style="font-size: 20px;"></i>
+                                            </div>
+                                            <div class="transactiondescription">
+
+                                                <ul style="list-style: none; ">
+                                                    <li><b>Exchanged USD to CFA</b></li>
+                                                    <li style="font-size: 10px;">2:30 <span>pm</span> <span>today</span></li>
+                                                </ul>
+                                                 
+                                            </div>
+                                        </div>
+
+                                        <div class="tran-samount-status me-3">
+
+                                            <ul style="list-style: none;">
+                                                <li><span>$</span>1200</li>
+                                                <li style="font-size: 10px;">pending</li>
+                                            </ul>
+                            
+                                        </div>
+                                    </div>
+
+                                    <!-- 5 -->
+                                    <div class="d-flex" style=" justify-content: space-between; align-items: center;">
+
+                                        <div class="d-flex mt-3 ms-3" id="transactions-icondiv" >
+                                            <div class="transaction-icon d-flex">
+                                                <i class="fa-solid fa-arrows-rotate" style="font-size: 20px;"></i>
+                                            </div>
+                                            <div class="transactiondescription">
+
+                                                <ul style="list-style: none;">
+                                                    <li><b>Exchanged USD to CFA</b></li>
+                                                    <li style="font-size: 10px;">2:30 <span>pm</span> <span>today</span></li>
+                                                </ul>
+                                                 
+                                            </div>
+                                        </div>
+
+                                        <div class="tran-samount-status me-3">
+
+                                            <ul style="list-style: none;">
+                                                <li><span>$</span>1200</li>
+                                                <li style="font-size: 10px;">pending</li>
+                                            </ul>
+                            
+                                        </div>
+                                    </div>
+
+                                    <!-- 6 -->
+                                    <div class="d-flex" style=" justify-content: space-between; align-items: center;">
+
+                                        <div class="d-flex mt-3 ms-3" id="transactions-icondiv" >
+                                            <div class="transaction-icon d-flex">
+                                                <i class="fa-solid fa-arrows-rotate" style="font-size: 20px;"></i>
+                                            </div>
+                                            <div class="transactiondescription">
+
+                                                <ul style="list-style: none;">
+                                                    <li><b>Exchanged USD to CFA</b></li>
+                                                    <li style="font-size: 10px;">2:30 <span>pm</span> <span>today</span></li>
+                                                </ul>
+                                                 
+                                            </div>
+                                        </div>
+
+                                        <div class="tran-samount-status me-3">
+
+                                            <ul style="list-style: none;">
+                                                <li><span>$</span>1200</li>
+                                                <li style="font-size: 10px;">pending</li>
+                                            </ul>
+                            
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    
+                    </div>
+    
+    
+            </div>
+        </div>
+    </div>
+    
+
+    <script type="text/javascript" src="jquery/jquery.min.js"></script>
+
+</body>
+</html>

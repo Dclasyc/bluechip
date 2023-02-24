@@ -1,0 +1,241 @@
+
+/** Cascading Styling Sheet **/
+
+/** Side Panel Div **/
+
+.sidepanelitems{
+    
+    border-radius: 15px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.sidepanelitems:hover{
+    background-color: #e7f3fc;
+    color: #3f9f98;
+}
+
+.sidepanelitems ul{
+    list-style: none; 
+    display: flex; 
+    font-size: 14px; 
+    align-self: center;
+    color: #368781;
+}
+
+#maindashboarddiv{
+    background-color: #fafafa;
+    border-radius: 15px
+}
+
+#navpaneldiv{
+    justify-content: space-between !important;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.walletbalance{
+    height: 150px;
+    width: 47%;
+    border-radius: 10px;
+}
+
+#walletbalance_a{
+    background-color: rgba(36,33,100);
+    color: #fff;
+}
+
+#walletbalance_b{
+    background-color: #368781;
+    color: #fff;
+}
+
+#walletbalancecurrency_a{
+    background-color:rgba(36,33,100);
+    color: #fff;
+}
+
+#walletbalancecurrency_b{
+    background-color:#368781;
+    color: #fff;
+}
+
+.btnquickactions{
+    height: 50px;
+    width: 47%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 5px 1px #DFDFDF;
+}
+
+#btnquickactions_b{
+    color: #3f9f98;
+}
+
+#convertfundsdiv{
+    height:inherit;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    justify-content: space-between;
+}
+
+.convertcurrency{
+    height: 70px;
+    width: 43%;
+    border: 1px solid #DFDFDF;
+    border-radius: 10px;
+}
+#convertcurrencyicon{
+    width: 10%; 
+    border-radius: 50%; 
+    height: 50px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #3f9f98;
+}
+
+#createrecepient{
+    width: 85px;
+    background-color: #3f9f98;
+    color: #fff;
+    height: 140px;
+    border-radius: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 20px;
+
+}
+
+.recepients{
+    width: 85px;
+    background-color: #fff;
+    height: 130px;
+    border-radius: 10%;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top:10px;
+    box-shadow: rgb(0,0,0,0.3);
+}
+
+#atmcard{
+    height: 230px;
+    width: 98%;
+    border-radius: 10px;
+    margin-top: -10px;
+    background: linear-gradient(150deg, rgba(36,33,100,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(150deg, rgba(63,159,152,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(150deg, rgba(255,185,78,.8), rgba(255,185,78,0) 70.71%),
+                linear-gradient(336deg, rgba(88, 176, 253, 0.8), rgba(4,57,138,0) 70.71%),
+                linear-gradient(336deg, rgba(0, 0, 0, 0.8), rgba(4,57,138,0) 70.71%),
+                linear-gradient(150deg, rgba(255,255,255,.8), rgba(255,185,78,0) 70.71%);
+    box-shadow: 3px 3px 5px 1px #DFDFDF;
+}
+
+#transactionslist{
+    width: 98%;
+    min-height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.transaction-icon{
+    height: 40px; 
+    width: 40px; 
+    border-radius: 50%; 
+    background-color: blueviolet; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#atmnumbers ul li{
+    margin-left: 10px;
+    font-size: 23px;
+    color: #fff;
+}
+
+#cardnameexpdiv ul li{
+    color: #fff;
+}
+
+/* Signup and Sign in Page */
+
+#signupform{
+    font-size: x-small;
+}
+
+#signinform{
+    font-size: x-small;
+}
+
+#signupformdiv{
+    background-color: rgb(236, 245, 245,.8);
+    border-radius: 15px;
+}
+
+#signinformdiv{
+    background-color: rgb(236, 245, 245,.8);
+    border-radius: 15px;
+}
+
+#btnsignup{
+    background-color: #3f9f98;
+    color: #fff;
+}
+
+#btnignin{
+    background-color: #3f9f98;
+    color: #fff;
+}
+
+/* Settings page */
+
+#settingsidepaneldiv{
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.settingsidepanelitems{
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 0px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.settingsidepanelitems:hover{
+    background-color: #e7f3fc;
+    color: #3f9f98;
+    border-right: 2px solid #3f9f98;
+}
+
+.settingsidepanelitems ul{
+    list-style: none; 
+    display: flex; 
+    font-size: 14px; 
+    align-self: center;
+    color: #368781;
+}
+
+#settingsform{
+    font-size: 16px;
+}
